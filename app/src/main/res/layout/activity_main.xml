@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Midi Recorder"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Not Recording"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:text="recording1"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/txtFileExtension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=".midi"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Record"
+            android:textColor="#000000" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
